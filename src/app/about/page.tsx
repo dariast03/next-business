@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function AboutPage() {
   return (
     <>
       {/* wrapper */}
@@ -260,8 +260,8 @@ export default function Home() {
                 <div className="container">
                   <div className="mil-banner-content mil-up">
                     <h1 className="mil-muted mil-mb-60">
-                      Designing <span className="mil-thin">a Better</span>
-                      <br /> World <span className="mil-thin">Today</span>
+                      WDAW <span className="mil-thin">a CZXC</span>
+                      <br /> AW!@# <span className="mil-thin">23423</span>
                     </h1>
                     <div className="row">
                       <div className="col-md-7 col-lg-5">

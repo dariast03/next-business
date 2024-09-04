@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import "../../public/css/style.css";
+import "../../public/css/plugins/bootstrap-grid.css";
+import "../../public/css/plugins/font-awesome.min.css";
+import "../../public/css/plugins/swiper.min.css";
+import "../../public/css/plugins/fancybox.min.css";
+import "../../public/css/style.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +24,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+
+      <Script src="js/plugins/jquery.min.js" />
+      <Script src="js/plugins/swup.min.js" />
+      <Script src="js/plugins/swiper.min.js" />
+      <Script src="js/plugins/fancybox.min.js" />
+      <Script src="js/plugins/gsap.min.js" />
+      <Script src="js/plugins/smooth-scroll.js" />
+      <Script src="js/plugins/ScrollTrigger.min.js" />
+      <Script src="js/plugins/ScrollTo.min.js" />
+      <Script src="js/main.js" />
     </html>
   );
 }
