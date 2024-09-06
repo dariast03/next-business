@@ -46,7 +46,7 @@ const About = () => {
                 style={{ paddingBottom: "160%" }}
               >
                 <img
-                  src="/img/photo/1.jpg"
+                  src="https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0090-1.jpg"
                   alt="Rueda de Negocios"
                   className="mil-scale"
                   data-value-1={1}

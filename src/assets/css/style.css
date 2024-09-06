@@ -57,6 +57,15 @@ p.s. I am available for Freelance hire (UI design, web development). email: mill
 main
 
 ------------------------------------------- */
+
+:root {
+  --primary: 105, 255, 255;
+  --primary-bg: #960000;
+  --secondary: 9, 24, 83;
+  --ligth: 255, 255, 255;
+  --dark: 0, 0, 0;
+}
+
 *,
 *:before,
 *:after {
@@ -366,7 +375,7 @@ blockquote {
   font-size: 18px;
   color: rgb(0, 0, 0);
   font-style: italic;
-  border-left: solid 4px rgb(255, 152, 0);
+  border-left: solid 4px rgb(var(--secondary));
 }
 
 @media screen and (max-width: 768px) {
@@ -421,7 +430,7 @@ a {
 }
 
 .mil-accent {
-  color: rgb(255, 152, 0);
+  color: rgb(var(--secondary));
 }
 
 .mil-light {
@@ -449,7 +458,7 @@ a {
 }
 
 .mil-marker {
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
   padding: 0 5px;
 }
 
@@ -583,7 +592,7 @@ link
 }
 
 .mil-link.mil-accent svg path {
-  fill: rgb(255, 152, 0);
+  fill: rgb(var(--secondary));
 }
 
 .mil-link.mil-dark svg {
@@ -652,8 +661,8 @@ button
   border: none;
   letter-spacing: 2px;
   font-size: 12px;
-  background-color: rgb(255, 152, 0);
-  color: rgb(0, 0, 0);
+  background-color: rgb(var(--secondary));
+  color: rgb(255, 255, 255);
   border-radius: 70px;
   padding: 0 15px 0 50px;
   height: 70px;
@@ -673,13 +682,13 @@ button
   width: 40px;
   height: 40px;
   padding: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(var(--ligth));
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 
 .mil-button svg path {
-  fill: rgb(255, 152, 0);
+  fill: rgb(var(--dark));
 }
 
 .mil-button.mil-icon-button {
@@ -697,11 +706,11 @@ button
 
 .mil-button.mil-icon-button-sm svg {
   margin-left: 0;
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
 }
 
 .mil-button.mil-icon-button-sm svg path {
-  fill: rgb(0, 0, 0);
+  fill: rgb(var(--ligth));
 }
 
 .mil-button:hover {
@@ -868,7 +877,7 @@ breadcrumbs
 }
 
 .mil-breadcrumbs li a:hover {
-  color: rgb(255, 152, 0);
+  color: rgb(var(--secondary));
 }
 
 .mil-breadcrumbs li:last-child {
@@ -894,7 +903,7 @@ breadcrumbs
 }
 
 .mil-breadcrumbs.mil-light li a:hover {
-  color: rgb(255, 152, 0) !important;
+  color: rgb(var(--secondary)) !important;
 }
 
 .mil-breadcrumbs.mil-center {
@@ -1203,7 +1212,7 @@ preloader
   position: absolute;
   opacity: 0;
   height: 100%;
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
 }
 
 .mil-preloader.mil-hidden {
@@ -1310,7 +1319,7 @@ scrollbar
 .mil-progress-track .mil-progress {
   width: 4px;
   height: 0;
-  background-color: rgb(255, 152, 0);
+  background-color: var(--primary-bg);
 }
 
 @media screen and (max-width: 992px) {
@@ -1533,7 +1542,7 @@ menu
   z-index: 9;
   width: 100%;
   height: 100vh;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--primary-bg);
   opacity: 0;
   pointer-events: none;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
@@ -1768,17 +1777,21 @@ menu
 .mil-main-menu ul li a.mil-active:before {
   -webkit-transform: scale(1);
   transform: scale(1);
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
 }
 
 .mil-main-menu ul li.mil-active>a {
-  color: rgb(255, 152, 0);
+  color: rgb(var(--secondary));
 }
 
 .mil-main-menu ul li.mil-active>a:hover {
-  color: rgb(255, 152, 0) !important;
+  color: rgb(var(--secondary)) !important;
   -webkit-filter: brightness(110%);
   filter: brightness(110%);
+}
+
+#swupMenu>ul>li {
+  list-style: none;
 }
 
 .mil-main-menu ul li.mil-has-children>a:hover {
@@ -2070,7 +2083,7 @@ banner
 }
 
 .mil-portrait-frame .mil-nimbus {
-  background: radial-gradient(50% 50% at 50% 50%, rgb(255, 152, 0) 0%, rgba(250, 168, 69, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, rgb(var(--secondary)) 0%, rgba(250, 168, 69, 0) 100%);
   width: 100%;
   padding-bottom: 100%;
   position: absolute;
@@ -2514,7 +2527,7 @@ about
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2688,7 +2701,7 @@ services
   left: 0;
   height: 4px;
   width: 0;
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
   -webkit-transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
 }
@@ -2803,7 +2816,7 @@ services
 }
 
 .mil-service-card-lg.mil-other-card:hover {
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
 }
 
 .mil-service-card-lg.mil-other-card:hover .mil-link svg {
@@ -2811,7 +2824,7 @@ services
 }
 
 .mil-service-card-lg.mil-other-card:hover .mil-link svg path {
-  fill: rgb(255, 152, 0);
+  fill: rgb(var(--secondary));
 }
 
 @media screen and (max-width: 1200px) {
@@ -2864,7 +2877,7 @@ team
   left: 0;
   height: 4px;
   width: 0;
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
   -webkit-transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
 }
@@ -2939,7 +2952,7 @@ team
 }
 
 .mil-team-card .mil-description .mil-secrc-text a:hover {
-  color: rgb(255, 152, 0);
+  color: rgb(var(--secondary));
 }
 
 .mil-team-card:hover img {
@@ -3010,7 +3023,7 @@ social icons
 }
 
 .mil-social-icons li a:hover {
-  color: rgb(255, 152, 0);
+  color: rgb(var(--secondary));
 }
 
 .mil-social-icons.mil-dark li a {
@@ -3018,7 +3031,7 @@ social icons
 }
 
 .mil-social-icons.mil-dark li a:hover {
-  color: rgb(255, 152, 0);
+  color: rgb(var(--secondary));
 }
 
 /* -------------------------------------------
@@ -3124,8 +3137,8 @@ revievs
 }
 
 .mil-revi-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  -webkit-box-shadow: inset 0 0 0 4px rgb(255, 152, 0);
-  box-shadow: inset 0 0 0 4px rgb(255, 152, 0);
+  -webkit-box-shadow: inset 0 0 0 4px rgb(var(--secondary));
+  box-shadow: inset 0 0 0 4px rgb(var(--secondary));
 }
 
 .mil-quote-icon {
@@ -3137,7 +3150,7 @@ revievs
 }
 
 .mil-quote-icon path {
-  fill: rgb(255, 152, 0);
+  fill: rgb(var(--secondary));
 }
 
 .mil-slider-nav {
@@ -3158,7 +3171,7 @@ revievs
 }
 
 .mil-slider-nav .mil-slider-arrow svg path {
-  fill: rgb(255, 152, 0);
+  fill: rgb(var(--secondary));
 }
 
 .mil-slider-nav .mil-slider-arrow.mil-prev {
@@ -3341,7 +3354,7 @@ blog
 }
 
 .mil-pagination-btn.mil-active {
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
 }
 
 .mil-category-list {
@@ -3387,7 +3400,7 @@ blog
 }
 
 .mil-category-list li a.mil-active {
-  background-color: rgb(255, 152, 0);
+  background-color: rgb(var(--secondary));
 }
 
 @media screen and (max-width: 768px) {
@@ -3443,7 +3456,7 @@ footer
 .mil-footer-menu ul li a:hover {
   -webkit-transform: translateX(10px);
   transform: translateX(10px);
-  color: rgb(255, 152, 0);
+  color: rgb(var(--secondary));
 }
 
 @media screen and (max-width: 768px) {
@@ -3453,7 +3466,7 @@ footer
 }
 
 .mil-footer-menu ul li.mil-active a {
-  color: rgb(255, 152, 0);
+  color: rgb(var(--secondary));
 }
 
 .mil-footer-menu ul li.mil-active a:hover {
@@ -3999,7 +4012,7 @@ price
   width: 100%;
   height: 100%;
   left: 2px;
-  text-shadow: -2px 0 rgb(255, 152, 0);
+  text-shadow: -2px 0 rgb(var(--secondary));
   clip: rect(44px, 450px, 56px, 0);
   animation: glitch-anim 5s infinite linear alternate-reverse;
 }

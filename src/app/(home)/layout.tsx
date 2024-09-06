@@ -1,9 +1,3 @@
-import "@/assets/css/style.css";
-import "@/assets/css/plugins/bootstrap-grid.css";
-import "@/assets/css/plugins/font-awesome.min.css";
-import "@/assets/css/plugins/swiper.min.css";
-import "@/assets/css/plugins/fancybox.min.css";
-import "@/assets/css/style.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 import Header from "@/components/layout/header/header";

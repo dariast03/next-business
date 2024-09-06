@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Header = () => {
@@ -13,14 +14,14 @@ const Header = () => {
         <div className="mil-frame-bottom">
           <div className="mil-current-page" />
           <div className="mil-back-to-top">
-            <a href="#top" className="mil-link mil-dark mil-arrow-place">
-              <span>Back to top</span>
-            </a>
+            <a href="#top" className="mil-link mil-dark mil-arrow-place"></a>
           </div>
         </div>
       </div>
 
-      <img src="/img/logo.png" className="logo" />
+      <Link href={"/"}>
+        <img src="/img/logo.png" className="logo" />
+      </Link>
     </>
   );
 };

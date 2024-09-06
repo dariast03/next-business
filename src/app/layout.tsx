@@ -1,4 +1,11 @@
+import "@/assets/css/style.css";
+import "@/assets/css/plugins/bootstrap-grid.css";
+import "@/assets/css/plugins/font-awesome.min.css";
+import "@/assets/css/plugins/swiper.min.css";
+import "@/assets/css/plugins/fancybox.min.css";
+import "@/assets/css/style.css";
 import type { Metadata } from "next";
+import ScrollTo from "./_scrollTo";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ScrollTo>{children}</ScrollTo>
+      </body>
     </html>
   );
 }

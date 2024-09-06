@@ -20,10 +20,38 @@ export const links: MenuItemProps[] = [
   {
     title: "¿Qué es la rueda?",
     url: "/que-es-la-rueda",
+    subitems: [
+      {
+        title: "¿Quienes participan?",
+        url: "/que-es-la-rueda#quienes-participan",
+      },
+      {
+        title: "Servicios de la rueda",
+        url: "/que-es-la-rueda#servicios-de-la-rueda",
+      },
+      {
+        title: "Resultados Anteriores",
+        url: "/que-es-la-rueda#resultados-anteriores",
+      },
+    ],
   },
   {
     title: "¿Cómo participar?",
     url: "/como-participar",
+    subitems: [
+      {
+        title: "Metodologia para reuniones",
+        url: "/como-participar",
+      },
+      {
+        title: "Misiones Empresariales",
+        url: "/como-participar",
+      },
+      {
+        title: "Preguntas Frecuentes",
+        url: "/como-participar",
+      },
+    ],
   },
   {
     title: "Contáctenos",
