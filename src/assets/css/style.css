@@ -1381,7 +1381,7 @@ frame
 @media screen and (max-width: 1200px) {
   .mil-frame .mil-frame-top {
     height: 90px;
-    background-color: rgba(0, 0, 0, 0.95);
+    /*   background-color: rgba(0, 0, 0, 0.95); */
     border-bottom: solid 1px rgba(255, 255, 255, 0.1);
     padding: 0 30px;
     -webkit-backdrop-filter: blur(8px);
@@ -1395,7 +1395,7 @@ frame
   .mil-frame .mil-frame-top .mil-menu-btn span,
   .mil-frame .mil-frame-top .mil-menu-btn span:after,
   .mil-frame .mil-frame-top .mil-menu-btn span:before {
-    background: rgb(245, 14, 14);
+    background: rgb(255, 113, 113);
   }
 }
 
@@ -3109,31 +3109,31 @@ revievs
 }
 
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-1 {
-  background-image: url(/img/faces/customers/1.jpg);
+  background-image: url(/expo/img/faces/customers/1.jpg);
 }
 
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-2 {
-  background-image: url(/img/faces/customers/2.jpg);
+  background-image: url(/expo/img/faces/customers/2.jpg);
 }
 
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-3 {
-  background-image: url(/img/faces/customers/3.jpg);
+  background-image: url(/expo/img/faces/customers/3.jpg);
 }
 
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-4 {
-  background-image: url(/img/faces/customers/4.jpg);
+  background-image: url(/expo/img/faces/customers/4.jpg);
 }
 
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-5 {
-  background-image: url(/img/faces/customers/5.jpg);
+  background-image: url(/expo/img/faces/customers/5.jpg);
 }
 
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-6 {
-  background-image: url(/img/faces/customers/6.jpg);
+  background-image: url(/expo/img/faces/customers/6.jpg);
 }
 
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-7 {
-  background-image: url(/img/faces/customers/7.jpg);
+  background-image: url(/expo/img/faces/customers/7.jpg);
 }
 
 .mil-revi-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -4840,7 +4840,15 @@ html.is-animating .mil-menu-frame {
 
 }
 
+@media (width < 1200px) {
+  .logo {
+    top: 20px;
+    left: 20px;
+    width: 120px;
+  }
+}
 
+/* 
 @media (width < 1200px) {
   .mil-content {
     padding-top: 90px;
@@ -4851,7 +4859,7 @@ html.is-animating .mil-menu-frame {
   .mil-content {
     padding-top: 90px;
   }
-}
+} */
 
 .mil-traslate-t {
   transform: translateY(10px);

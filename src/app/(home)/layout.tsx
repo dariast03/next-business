@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import Header from "@/components/layout/header/header";
 import Menu from "@/components/layout/menu/menu";
+import CONSTANTS from "@/data/CONSTANTS";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -71,15 +72,15 @@ export default function RootLayout({
       </div>
       {/* wrapper end */}
 
-      <Script src="js/plugins/jquery.min.js" />
-      <Script src="js/plugins/swup.min.js" />
-      <Script src="js/plugins/swiper.min.js" />
-      <Script src="js/plugins/fancybox.min.js" />
-      <Script src="js/plugins/gsap.min.js" />
-      <Script src="js/plugins/smooth-scroll.js" />
-      <Script src="js/plugins/ScrollTrigger.min.js" />
-      <Script src="js/plugins/ScrollTo.min.js" />
-      <Script src="js/main.js" />
+      <Script src={`${CONSTANTS.BASE_URL}/js/plugins/jquery.min.js`} />
+      <Script src={`${CONSTANTS.BASE_URL}/js/plugins/swup.min.js`} />
+      <Script src={`${CONSTANTS.BASE_URL}/js/plugins/swiper.min.js`} />
+      <Script src={`${CONSTANTS.BASE_URL}/js/plugins/fancybox.min.js`} />
+      <Script src={`${CONSTANTS.BASE_URL}/js/plugins/gsap.min.js`} />
+      <Script src={`${CONSTANTS.BASE_URL}/js/plugins/smooth-scroll.js`} />
+      <Script src={`${CONSTANTS.BASE_URL}/js/plugins/ScrollTrigger.min.js`} />
+      <Script src={`${CONSTANTS.BASE_URL}/js/plugins/ScrollTo.min.js`} />
+      <Script src={`${CONSTANTS.BASE_URL}/js/main.js`} />
     </>
   );
 }

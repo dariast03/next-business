@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /*   basePath: "/demo", */
+  basePath: "/expo",
+  output: "export",
 };
 
 export default nextConfig;

@@ -1,3 +1,4 @@
+import CONSTANTS from "@/data/CONSTANTS";
 import Link from "next/link";
 import React from "react";
 
@@ -20,7 +21,7 @@ const Header = () => {
       </div>
 
       <Link href={"/"}>
-        <img src="/img/logo.png" className="logo" />
+        <img src={`${CONSTANTS.BASE_URL}/img/logo.png`} className="logo" />
       </Link>
     </>
   );

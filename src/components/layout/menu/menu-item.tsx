@@ -26,7 +26,7 @@ const MenuItem: React.FC<MenuItemProps> = (props) => {
         <ul>
           {subitems.map((subitem) => (
             <li key={subitem.title}>
-              <a href={subitem.url}>{subitem.title}</a>
+              <Link href={subitem.url}>{subitem.title}</Link>
             </li>
           ))}
         </ul>
