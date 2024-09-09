@@ -2438,6 +2438,8 @@ dodecahedron
   transform-origin: bottom;
 }
 
+
+
 .mil-pentagon div:nth-child(1) {
   -webkit-transform: rotate(0.2turn);
   transform: rotate(0.2turn);
@@ -2674,13 +2676,13 @@ services
 }
 
 .mil-service-card-sm p {
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
+  /* -webkit-line-clamp: 3;
+  line-clamp: 3; */
   -webkit-box-orient: vertical;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
@@ -4863,4 +4865,8 @@ html.is-animating .mil-menu-frame {
 
 .mil-traslate-t {
   transform: translateY(10px);
+}
+
+.bg-light {
+  background-color: rgba(248, 249, 250) !important;
 }
