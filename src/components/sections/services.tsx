@@ -23,83 +23,70 @@ const Services = () => {
             <div className="row">
               <div className="col-lg-10">
                 <span className="mil-suptitle mil-light-soft mil-suptitle-right mil-up">
-                  Conecta, Colabora y Crea Oportunidades <br /> en Nuestra Rueda
+                  Cumple con los Requisitos <br /> para Inscribirte en la Rueda
                   de Negocios.
                 </span>
               </div>
             </div>
             <div className="mil-complex-text justify-content-center mil-up mil-mb-15">
               <span className="mil-text-image">
-                <img src="img/photo/2.jpg" alt="evento" />
+                <img src="/expo/img/photo/2.jpg" alt="evento" />
               </span>
               <h2 className="mil-h1 mil-muted mil-center">
-                Innovación y <span className="mil-thin">Oportunidades</span>
+                Requisitos de <span className="mil-thin">Inscripción</span>
               </h2>
             </div>
             <div className="mil-complex-text justify-content-center mil-up">
               <h2 className="mil-h1 mil-muted mil-center">
-                Para Tu <span className="mil-thin">Empresa.</span>
+                Para Tu <span className="mil-thin">Participación.</span>
               </h2>
-              <a
-                href="services.html"
+              {/*  <a
+                href="requisitos.html"
                 className="mil-services-button mil-button mil-arrow-place"
               >
                 <span>Descubre más</span>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="row mil-services-grid m-0">
-            <div className="col-md-6 col-lg-3 mil-services-grid-item p-0">
-              <a href="service.html" className="mil-service-card-sm mil-up">
+            <div className="col-md-6 col-lg-4 mil-services-grid-item p-0">
+              <div className="mil-service-card-sm mil-up">
                 <h5 className="mil-muted mil-mb-30">
-                  Networking <br />
-                  Estratégico
+                  Persona Natural y/o <br />
+                  Jurídica
                 </h5>
                 <p className="mil-light-soft mil-mb-30">
-                  Facilita conexiones directas entre proveedores, compradores y
-                  socios potenciales.
+                  Abierto a individuos y entidades legales.
                 </p>
-                <div className="mil-button mil-icon-button-sm mil-arrow-place" />
-              </a>
+              </div>
             </div>
-            <div className="col-md-6 col-lg-3 mil-services-grid-item p-0">
-              <a href="service.html" className="mil-service-card-sm mil-up">
+
+            <div className="col-md-6 col-lg-4 mil-services-grid-item p-0">
+              <div className="mil-service-card-sm mil-up">
                 <h5 className="mil-muted mil-mb-30">
-                  Talleres de <br />
-                  Capacitación
+                  Tipos de Empresas <br />
+                  Aceptadas
                 </h5>
                 <p className="mil-light-soft mil-mb-30">
-                  Participa en talleres enfocados en innovación, marketing y
-                  estrategias de crecimiento.
+                  Incluye Unipersonales, Sociedades Anónimas, Sociedades de
+                  Responsabilidad Limitada, Asociaciones, Cooperativas, y
+                  Particulares interesados en comercializar o proveerse de
+                  productos y servicios.
                 </p>
-                <div className="mil-button mil-icon-button-sm mil-arrow-place" />
-              </a>
+              </div>
             </div>
-            <div className="col-md-6 col-lg-3 mil-services-grid-item p-0">
-              <a href="service.html" className="mil-service-card-sm mil-up">
+
+            <div className="col-md-6 col-lg-4 mil-services-grid-item p-0">
+              <div className="mil-service-card-sm mil-up">
                 <h5 className="mil-muted mil-mb-30">
-                  Charlas con <br />
-                  Expertos
+                  Identificación <br />
+                  Requerida
                 </h5>
                 <p className="mil-light-soft mil-mb-30">
-                  Aprende de líderes del sector sobre tendencias y oportunidades
-                  del mercado.
+                  Cédula de Identidad, DNI u otro documento de identificación,
+                  según el país.
                 </p>
-                <div className="mil-button mil-icon-button-sm mil-arrow-place" />
-              </a>
-            </div>
-            <div className="col-md-6 col-lg-3 mil-services-grid-item p-0">
-              <a href="service.html" className="mil-service-card-sm mil-up">
-                <h5 className="mil-muted mil-mb-30">
-                  Consultoría <br />
-                  Personalizada
-                </h5>
-                <p className="mil-light-soft mil-mb-30">
-                  Recibe asesoramiento para potenciar tu negocio y abrir nuevas
-                  oportunidades de mercado.
-                </p>
-                <div className="mil-button mil-icon-button-sm mil-arrow-place" />
-              </a>
+              </div>
             </div>
           </div>
         </div>

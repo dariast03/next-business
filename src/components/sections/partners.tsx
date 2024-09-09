@@ -1,3 +1,4 @@
+import CONSTANTS from "@/data/CONSTANTS";
 import { partners } from "@/data/partners";
 import { cn } from "@/lib/utils";
 import React from "react";
@@ -17,7 +18,10 @@ const Partners = () => {
                   ])}
                   style={{ width: 150 }}
                 >
-                  <img src={`img/partners/${partner}`} alt="logo" />
+                  <img
+                    src={`${CONSTANTS.BASE_URL}/img/partners/${partner}`}
+                    alt="logo"
+                  />
                 </div>
               </div>
             ))}

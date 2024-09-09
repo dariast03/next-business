@@ -18,6 +18,7 @@ const Business = () => {
             </span>
           </div>
         </div>
+
         <h2 className="mil-center mil-up mil-mb-60">
           Conoce a Nuestras <span className="mil-thin">Empresas Asociadas</span>
         </h2>
