@@ -7,6 +7,10 @@ const partners = [
     logo: "upds.png",
   },
   {
+    name: "GAMT",
+    logo: "gamt.png",
+  },
+  {
     name: "Cadexst",
     logo: "cadexst.png",
   },
@@ -14,15 +18,11 @@ const partners = [
     name: "Caneb",
     logo: "caneb.png",
   },
-  {
-    name: "GAMT",
-    logo: "gamt.png",
-  },
 ];
 
 const Teams = () => {
   return (
-    <section>
+    <section id="organizadores">
       <div
         className="container mil-p-120-120"
         /*    style={{
@@ -32,7 +32,9 @@ const Teams = () => {
         }} */
       >
         <div>
-          <h2 className="mil-center mil-up mil-mb-60">Organizan</h2>
+          <h2 className="mil-center mil-up mil-mb-60">
+            Conoce a nuestros organizadores
+          </h2>
 
           <div className="container overflow-hidden">
             <div className="row gy-4">

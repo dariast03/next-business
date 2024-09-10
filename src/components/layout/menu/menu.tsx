@@ -1,5 +1,6 @@
 import { links } from "@/data/links";
 import MenuItem from "./menu-item";
+import CONSTANTS from "@/data/CONSTANTS";
 
 const Menu = () => {
   return (
@@ -7,7 +8,13 @@ const Menu = () => {
       {/* frame clone */}
       <div className="mil-frame-top">
         <a href="home-1.html" className="mil-logo">
-          A.
+          <img
+            src={`${CONSTANTS.BASE_URL}/img/logo-white.png`}
+            alt="logo"
+            style={{
+              width: 200,
+            }}
+          />
         </a>
         <div className="mil-menu-btn">
           <span />
@@ -80,7 +87,7 @@ const Menu = () => {
                 </ul>
               </nav>
             </div>
-            <div className="col-xl-7">
+            {/*   <div className="col-xl-7">
               <div className="mil-menu-right-frame">
                 <div className="mil-animation-in">
                   <div className="mil-animation-frame">
@@ -173,7 +180,7 @@ const Menu = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

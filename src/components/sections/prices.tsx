@@ -1,0 +1,178 @@
+import React from "react";
+
+const prices = [
+  {
+    id: 1,
+    title: "Empresas Participantes EXPOSUR",
+    price: 100,
+    description:
+      "Acceso general a la rueda de negocios, participación en actividades y conferencias.",
+  },
+  {
+    id: 2,
+    title: "Público en General",
+    price: 200,
+    description:
+      "Incluye todos los beneficios del paquete Exposur 2024, además de acceso a reuniones exclusivas.",
+  },
+  {
+    id: 3,
+    title: "Empresa con stand Rueda de Negocios",
+    price: 400,
+    description:
+      "Incluye todos los beneficios del paquete Business, además de un stand exclusivo para exhibir tu empresa.",
+  },
+];
+
+const Prices = () => {
+  return (
+    <section className="mil-soft-bg" id="precios">
+      <div className="">
+        <div className="container mil-p-120-120">
+          <div className="mil-center">
+            <h2 className="mil-up mil-mb-30">
+              Paquetes
+              <span className="mil-thin"> para la </span> <br />
+              Rueda de Negocios
+            </h2>
+            <p className="mil-up mil-mb-60">
+              Elige el paquete que mejor se adapte a tus necesidades y forma
+              parte de la rueda de negocios más importante de la región.
+            </p>
+          </div>
+          {/* <a
+            href="contact.html"
+            className="mil-price-card mil-choose mil-accent-cursor mil-up"
+          >
+            <div className="row align-items-center">
+              <div className="col-lg-2">
+                <div className="mil-price-number mil-mb-30">
+                  <span className="mil-thin">Bs.</span>
+                  <span className="mil-accent-primary">100</span>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <h5 className="mil-mb-30">Exposur 2024</h5>
+              </div>
+              <div className="col-lg-4">
+                <p className="mil-mb-30">
+                  Acceso general a la rueda de negocios, participación en
+                  actividades y conferencias.
+                </p>
+              </div>
+              <div className="col-lg-2">
+                <div className="mil-adaptive-right mil-mb-30">
+                  <div className="mil-button mil-icon-button-sm mil-arrow-place" />
+                </div>
+              </div>
+            </div>
+          </a>
+          
+          <a
+            href="contact.html"
+            className="mil-price-card mil-choose mil-accent-cursor mil-up"
+          >
+            <div className="row align-items-center">
+              <div className="col-lg-2">
+                <div className="mil-price-number mil-mb-30">
+                  <span className="mil-thin">Bs.</span>
+                  <span className="mil-accent">200</span>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <h5 className="mil-mb-30">Business</h5>
+              </div>
+              <div className="col-lg-4">
+                <p className="mil-mb-30">
+                  Incluye todos los beneficios del paquete Exposur 2024, además
+                  de acceso a reuniones exclusivas.
+                </p>
+              </div>
+              <div className="col-lg-2">
+                <div className="mil-adaptive-right mil-mb-30">
+                  <div className="mil-button mil-icon-button-sm mil-arrow-place" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="contact.html"
+            className="mil-price-card mil-choose mil-accent-cursor mil-up mil-mb-60"
+          >
+            <div className="row align-items-center">
+              <div className="col-lg-2">
+                <div className="mil-price-number mil-mb-30">
+                  <span className="mil-thin">Bs.</span>
+                  <span className="mil-accent">400</span>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <h5 className="mil-mb-30">Stand</h5>
+              </div>
+              <div className="col-lg-4">
+                <p className="mil-mb-30">
+                  Incluye todos los beneficios del paquete Business, además de
+                  un stand exclusivo para exhibir tu empresa.
+                </p>
+              </div>
+              <div className="col-lg-2">
+                <div className="mil-adaptive-right mil-mb-360">
+                  <div className="mil-button mil-icon-button-sm mil-arrow-place" />
+                </div>
+              </div>
+            </div>
+          </a> */}
+
+          <div
+            className="mil-mb-30"
+            style={{
+              marginInline: "auto",
+              width: "100%",
+              maxWidth: 800,
+            }}
+          >
+            {prices.map((price) => (
+              <a
+                key={price.id}
+                href="contact.html"
+                className="mil-price-card mil-choose mil-accent-cursor mil-up"
+              >
+                <div className="row align-items-center justify-content-center">
+                  <div className="col-lg-2">
+                    <div className="mil-price-number mil-mb-30">
+                      <span className="mil-thin">Bs.</span>
+                      <span className="mil-accent-primary">{price.price}</span>
+                    </div>
+                  </div>
+                  <div className="col-lg-8">
+                    <h5 className="mil-mb-30 mil-center">{price.title}</h5>
+                  </div>
+                  {/*     <div className="col-lg-4">
+                  <p className="mil-mb-30">{price.description}</p>
+                </div> */}
+                  <div className="col-lg-2">
+                    <div className="mil-adaptive-right mil-mb-30">
+                      <div className="mil-button mil-button-primary mil-icon-button-sm mil-arrow-place" />
+                    </div>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="mil-center">
+            <a
+              href="contact.html"
+              className="mil-button mil-button-primary mil-arrow-place"
+            >
+              <span>Contáctanos para más detalles</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Prices;

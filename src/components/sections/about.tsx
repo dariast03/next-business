@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="descubre">
       <div className="container mil-p-120-30">
         <div className="row justify-content-between align-items-center">
           <div className="col-lg-6 col-xl-5">

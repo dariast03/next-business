@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <section className="mil-dark-bg">
+    <section className="mil-dark-bg" id="requisitos">
       <div className="mi-invert-fix">
         <div className="mil-animation-frame">
           <div
@@ -33,12 +33,12 @@ const Services = () => {
                 <img src="/expo/img/photo/2.jpg" alt="evento" />
               </span>
               <h2 className="mil-h1 mil-muted mil-center">
-                Requisitos de <span className="mil-thin">Inscripción</span>
+                Requisitos <span className="mil-thin"> de </span> Inscripción
               </h2>
             </div>
             <div className="mil-complex-text justify-content-center mil-up">
               <h2 className="mil-h1 mil-muted mil-center">
-                Para Tu <span className="mil-thin">Participación.</span>
+                <span className="mil-thin"> Para Tu </span>Participación.
               </h2>
               {/*  <a
                 href="requisitos.html"

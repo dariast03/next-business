@@ -10,7 +10,6 @@ const HiddenElements = () => {
           <div />
           <div />
           <div />
-          <div className="node-circle" />
         </div>
         <div className="mil-pentagon">
           <div />

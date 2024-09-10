@@ -2,7 +2,7 @@ import React from "react";
 
 const Business = () => {
   return (
-    <section className="mil-soft-bg">
+    <section className="mil-soft-bg" id="empresas">
       <div
         className="container mil-p-120-120"
         style={{

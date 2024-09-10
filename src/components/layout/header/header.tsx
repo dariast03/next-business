@@ -7,6 +7,13 @@ const Header = () => {
     <>
       <div className="mil-frame">
         <div className="mil-frame-top">
+          {/*  <Link href={"/"}>
+            <img
+              src={`${CONSTANTS.BASE_URL}/img/logo-dark.png`}
+              className="logo"
+            />
+          </Link> */}
+
           <div />
           <div className="mil-menu-btn">
             <span />
@@ -21,7 +28,7 @@ const Header = () => {
       </div>
 
       <Link href={"/"}>
-        <img src={`${CONSTANTS.BASE_URL}/img/logo.png`} className="logo" />
+        <img src={`${CONSTANTS.BASE_URL}/img/logo-expo.png`} className="logo" />
       </Link>
     </>
   );
