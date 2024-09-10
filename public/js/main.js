@@ -289,7 +289,7 @@ $(function () {
     cursor
 
     ***************************/
-  /*   const cursor = document.querySelector(".mil-ball");
+  const cursor = document.querySelector(".mil-ball");
 
   gsap.set(cursor, {
     xPercent: -50,
@@ -419,7 +419,7 @@ $(function () {
       scale: 1,
       ease: "sine",
     });
-  }); */
+  });
   /***************************
 
      menu
@@ -806,7 +806,7 @@ $(function () {
 
         ***************************/
 
-    /*  $(".mil-drag, .mil-more, .mil-choose").mouseover(function () {
+    $(".mil-drag, .mil-more, .mil-choose").mouseover(function () {
       gsap.to($(cursor), 0.2, {
         width: 90,
         height: 90,
@@ -918,7 +918,7 @@ $(function () {
         scale: 1,
         ease: "sine",
       });
-    }); */
+    });
     /***************************
 
         main menu
