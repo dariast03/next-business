@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Rueda de Negocios - ExpoSur 2024</title>
+      </head>
       <body>
         <ScrollTo>{children}</ScrollTo>
       </body>
