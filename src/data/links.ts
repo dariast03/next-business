@@ -29,10 +29,6 @@ export const links: MenuItemProps[] = [
         title: "Servicios de la rueda",
         url: "/que-es-la-rueda#servicios-de-la-rueda",
       },
-      {
-        title: "Resultados Anteriores",
-        url: "/que-es-la-rueda#resultados-anteriores",
-      },
     ],
   },
   {
@@ -43,14 +39,14 @@ export const links: MenuItemProps[] = [
         title: "Metodologia para reuniones",
         url: "/como-participar",
       },
-      {
+      /*  {
         title: "Misiones Empresariales",
         url: "/como-participar",
       },
       {
         title: "Preguntas Frecuentes",
         url: "/como-participar",
-      },
+      }, */
     ],
   },
   {

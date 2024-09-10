@@ -64,6 +64,7 @@ main
   --secondary: 9, 24, 83;
   --ligth: 255, 255, 255;
   --dark: 0, 0, 0;
+  --pentagon: 255, 255, 255;
 }
 
 *,
@@ -96,7 +97,7 @@ body {
   }
 }
 
-/* *::-moz-selection {
+*::-moz-selection {
   color: inherit;
   background-color: transparent;
 }
@@ -104,7 +105,7 @@ body {
 *::selection {
   color: inherit;
   background-color: transparent;
-} */
+}
 
 .mil-wrapper {
   position: relative;
@@ -433,6 +434,10 @@ a {
   color: rgb(var(--secondary));
 }
 
+.mil-accent-primary {
+  color: var(--primary-bg);
+}
+
 .mil-light {
   color: rgb(255, 255, 255) !important;
 }
@@ -672,8 +677,12 @@ button
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 
+.mil-button-primary {
+  background-color: var(--primary-bg);
+}
+
 .mil-button span {
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .mil-button svg {
@@ -707,6 +716,11 @@ button
 .mil-button.mil-icon-button-sm svg {
   margin-left: 0;
   background-color: rgb(var(--secondary));
+}
+
+.mil-button-primary.mil-icon-button-sm svg {
+  margin-left: 0;
+  background-color: var(--primary-bg);
 }
 
 .mil-button.mil-icon-button-sm svg path {
@@ -744,7 +758,7 @@ button
 
 @media screen and (max-width: 992px) {
   .mil-button {
-    height: 60px;
+    /*   height: 60px; */
     padding: 0 10px 0 40px;
   }
 
@@ -1212,7 +1226,7 @@ preloader
   position: absolute;
   opacity: 0;
   height: 100%;
-  background-color: rgb(var(--secondary));
+  background-color: var(--primary-bg);
 }
 
 .mil-preloader.mil-hidden {
@@ -1904,22 +1918,21 @@ banner
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  align-items: center;
+}
+
+@media (width < 1200px) {
+  .mil-banner .container .mil-banner-content {
+    padding-top: 200px;
+  }
 }
 
 .mil-banner .mil-banner-content {
   width: 100%;
-  padding-bottom: 120px;
+  /*   padding-bottom: 120px; */
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
-  .mil-banner .mil-banner-content {
-    padding-bottom: 90px;
-  }
-}
 
 .mil-banner .mil-lines-place {
   position: absolute;
@@ -1927,9 +1940,7 @@ banner
   bottom: calc(100% + 120px);
 }
 
-.mil-inner-banner .mil-banner-content {
-  padding: 150px 0 0 0;
-}
+
 
 @media screen and (max-width: 1200px) {
   .mil-inner-banner .mil-banner-content {
@@ -2256,7 +2267,7 @@ dodecahedron
 }
 
 .mil-position-1 .mil-pentagon div {
-  border-top: 0.1px solid rgb(255, 255, 255);
+  border-top: 0.1px solid rgb(var(--pentagon));
 }
 
 .mil-position-2 {
@@ -2265,7 +2276,7 @@ dodecahedron
 }
 
 .mil-position-2 .mil-pentagon div {
-  border-top: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(var(--pentagon));
 }
 
 .mil-position-2 .mil-dodecahedron {
@@ -2285,7 +2296,7 @@ dodecahedron
 }
 
 .mil-position-3 .mil-pentagon div {
-  border-top: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(var(--pentagon));
 }
 
 .mil-position-3 .mil-dodecahedron {
@@ -3000,6 +3011,7 @@ social icons
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
 }
 
 .mil-social-icons.mil-center {
@@ -3838,6 +3850,7 @@ map
 .mil-map-frame {
   background-color: rgb(229, 229, 229);
   pointer-events: all;
+  width: 500px;
   height: 600px;
   position: relative;
   overflow: hidden;
@@ -3932,6 +3945,7 @@ price
 .mil-price-card {
   display: block;
   width: 100%;
+
   border-top: solid 1px rgba(255, 255, 255, 0.1);
   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
   padding: 60px 0 30px;
@@ -3947,6 +3961,15 @@ price
 .mil-price-card .mil-price-number .mil-thin {
   font-weight: 200;
   font-size: 18px;
+}
+
+
+@media (width < 1000px) {
+
+  .mil-price-card h5 {
+    text-align: left;
+  }
+
 }
 
 /***************************
@@ -4835,9 +4858,9 @@ html.is-animating .mil-menu-frame {
 
 .logo {
   position: fixed;
-  top: 50px;
+  top: 20px;
   left: 20px;
-  width: 150px;
+  width: 100px;
   z-index: 9999;
 
 }
@@ -4846,7 +4869,7 @@ html.is-animating .mil-menu-frame {
   .logo {
     top: 20px;
     left: 20px;
-    width: 120px;
+    width: 60px;
   }
 }
 
@@ -4869,4 +4892,43 @@ html.is-animating .mil-menu-frame {
 
 .bg-light {
   background-color: rgba(248, 249, 250) !important;
+}
+
+#que-es-la-rueda {
+  max-width: 1800px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media (width < 1000px) {
+  #servicios-de-la-rueda>div.col-lg-4.d-flex.justify-content-center.align-items-center {
+    order: -1;
+  }
+}
+
+#inicio>div>div.container>div>div>div>ul>li {
+  font-size: 20px;
+}
+
+@media (width < 1000px) {
+  #inicio>div>div.container>div>div>div>ul>li {
+    font-size: 16px;
+  }
+}
+
+.logo-footer .logo-redes {
+  max-width: 200px;
+
+}
+
+@media (width < 768px) {
+  .logo-footer .logo-redes {
+    margin-inline: auto;
+  }
+
+}
+
+.logo-footer img {
+  width: 100%;
+  height: auto;
 }
