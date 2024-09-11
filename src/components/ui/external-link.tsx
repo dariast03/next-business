@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import Link from "next/link";
 
 type Props = React.HtmlHTMLAttributes<HTMLDivElement> & {
   href: string;
@@ -7,15 +7,16 @@ type Props = React.HtmlHTMLAttributes<HTMLDivElement> & {
 
 const ExternalLink: React.FC<Props> = (props) => {
   return (
-    <div
+    <a
       {...props}
+      rel="noreferrer"
+      data-no-swup
       onClick={(e) => {
         e.preventDefault();
-        if (typeof window !== "undefined") {
-          window.open(props.href as string, "_blank");
-        }
+        window.open(props.href, "_blank");
       }}
-    ></div>
+      target="_blank"
+    />
   );
 };
 

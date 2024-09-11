@@ -12,19 +12,23 @@ const About = () => {
                 <span className="mil-thin">Rueda de Negocios</span>
               </h2>
               <p className="mil-up mil-mb-30">
-                La <strong>Rueda de Negocios</strong> es un evento interactivo
-                que reúne a empresarios, emprendedores y profesionales de
-                diversos sectores para crear alianzas estratégicas, explorar
-                oportunidades comerciales y fomentar la colaboración. Un espacio
-                donde las ideas se transforman en acuerdos y conexiones
-                valiosas.
+                La Rueda Empresarial de Negocios, organizada por la Universidad
+                Privada Domingo Savio, te permite ofertar y demandar productos y
+                servicios, establecer diferentes tipos de acuerdos de
+                cooperación y alianzas estratégicas.
+              </p>
+              <p className="mil-up mil-mb-30">
+                Durante dos días de reuniones empresas provenientes de
+                diferentes países y ciudades tienen la oportunidad de
+                contactarse para desarrollar nuevos negocios, intercambiar
+                información sobre las tendencias de productos y servicios, así
+                como de mercados emergentes.
               </p>
               <p className="mil-up mil-mb-60">
-                Nuestro enfoque es facilitar encuentros directos entre
-                proveedores, compradores y socios potenciales. A través de
-                charlas, talleres y sesiones de networking, ofrecemos un
-                ambiente ideal para el crecimiento empresarial, la innovación y
-                el intercambio de conocimientos.
+                De igual manera, en el mismo se generan espacios de capacitación
+                en temáticas como ser: tecnología, innovación, económicas,
+                financiamiento, entre otras. Se desarrolla en el marco de la
+                Feria Exposición de Tarija – Exposur 2024.
               </p>
               {/* <div className="mil-about-quote">
                 <div className="mil-avatar mil-up">

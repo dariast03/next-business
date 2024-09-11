@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <div className="mil-inner-banner">
+      <div className="mil-inner-banner mil-p-120-0">
         <div className="mil-banner-content mil-center mil-up">
           <div className="container">
             <ul className="mil-breadcrumbs mil-center mil-mb-60">

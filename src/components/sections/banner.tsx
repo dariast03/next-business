@@ -1,5 +1,7 @@
 import CONSTANTS from "@/data/CONSTANTS";
 import React from "react";
+import ExternalLink from "../ui/external-link";
+import { openUrl } from "@/lib/open-url";
 
 const Banner = () => {
   return (
@@ -58,12 +60,11 @@ const Banner = () => {
                 </ul>
               </div>
             </div>
-            <a
-              href="services.html"
-              className="mil-button mil-arrow-place mil-btn-space"
-            >
-              <span>Inscríbase</span>
-            </a>
+            <ExternalLink data-no-swup href={`${process.env.PLATFORM_URL}`}>
+              <div className="mil-button mil-arrow-place mil-btn-space">
+                <span>FORMULARIO DE INSCRIPCIÓN DIGITAL </span>
+              </div>
+            </ExternalLink>
             {/*           <a
             href="portfolio-1.html"
             className="mil-link mil-muted mil-arrow-place"
