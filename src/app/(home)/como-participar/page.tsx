@@ -3,7 +3,7 @@ import React from "react";
 const ComoParticiparPage = () => {
   return (
     <>
-      <div className="mil-inner-banner">
+      <div className="mil-inner-banner mil-p-120-90">
         <div className="mil-banner-content mil-up">
           <div className="mil-animation-frame">
             <div
@@ -49,23 +49,38 @@ const ComoParticiparPage = () => {
           </div>
 
           <div className="">
-            <div className="row justify-content-between mil-p-90-120">
-              <div className="col-lg-5">
-                <h3 className="mil-up mil-mb-60">Metodologia para reuniones</h3>
+            <div className="r mil-p-90-120">
+              <div className="">
+                <h3 className="mil-up mil-mb-60 mil-center">
+                  Metodologia para reuniones
+                </h3>
               </div>
-              <div className="col-lg-6">
-                <p className="mil-up mil-mb-30">
-                  A home surveillance camera that pays great attention to
-                  security and user privacy, featuring two modes to provide
-                  security while protecting personal privacy.The camera has an
-                  open and closed mode, we define the product to have clear two
-                  sides, expressing two working states and emotions.
+              <div className="">
+                <p className="mil-up mil-mb-30 mil-text-xl mil-dark">
+                  La agenda de reuniones estará disponible el 10 de octubre (Las
+                  empresas que no hayan realizado el pago, no tendrán acceso a
+                  esta información hasta efectuar el mismo). Una vez tenga en
+                  sus manos la agenda de reuniones, tenga el cuidado de
+                  revisarla y asistir puntualmente a cada una de sus reuniones
+                  presenciales y/o virtuales, para aprovechar al máximo el
+                  tiempo y no perjudicar a su contraparte. Es deber de las
+                  empresas asistir a todas las reuniones programadas en su
+                  agenda de negocios. El no presentarse a una reunión con una
+                  contraparte, demuestra poca seriedad por parte de la empresa
+                  solicitada o solicitante.
                 </p>
-                <p className="mil-up">
-                  Presents a simple and quiet state when not in use, delivering
-                  a gentle and security.At the same time, the camera can adapt
-                  to a variety of environments, providing elegant ways of wall
-                  hanging and standing installation.
+                <p className="mil-up mil-mb-30 mil-text-xl mil-dark">
+                  Asista puntualmente a TODAS sus reuniones de negocios. Respete
+                  los 20 minutos que se asignan a cada reunión, con esto
+                  aprovechará al máximo su tiempo y NO perjudicará a los
+                  participantes de la siguiente reunión. Complete el formulario
+                  de evaluación de reuniones de negocios al final del evento.
+                </p>
+                <p className="mil-up mil-text-xl mil-dark">
+                  Es deber de las empresas asistir a todas las reuniones
+                  programadas en su agenda de negocios. El no presentarse a una
+                  reunión con una contraparte, demuestra poca seriedad por parte
+                  de la empresa solicitada o solicitante.
                 </p>
               </div>
             </div>

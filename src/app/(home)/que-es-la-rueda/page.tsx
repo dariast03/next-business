@@ -34,28 +34,97 @@ const QueEsLaRuedaPage = () => {
             </div> */}
 
             <div className="col-lg-8">
-              <div className="row justify-content-between mil-p-90-120">
-                <div className="col-lg-4 d-flex justify-content-center align-items-center">
+              <div className="mil-p-90-120">
+                <div className="d-flex justify-content-center align-items-center">
                   <h3 className="mil-up mil-mb-60 " id="quienes-participan">
                     ¿Quiénes participan?
                   </h3>
                 </div>
-                <div className="col-lg-8">
-                  <p className="mil-text-xl mil-dark mil-up mil-mb-60">
-                    En la Rueda de Negocios participan empresarios,
-                    emprendedores, representantes de compañías nacionales e
-                    internacionales, y proveedores de servicios. Entre los
-                    participantes se encuentran productores y fabricantes,
-                    importadores y exportadores, proveedores, distribuidores,
-                    comercializadores, agentes comerciales, prestadores de
-                    servicios, e inversionistas. Durante el año 2023, la Rueda
-                    contó con la presencia de empresas y representantes de
-                    países como Argentina, Bolivia, Brasil, Chile, China,
-                    Colombia, Ecuador, Hong Kong, Japón, México, Panamá, Perú,
-                    Paraguay, Estados Unidos y Venezuela. Es una oportunidad
-                    única para conectar con nuevos socios, explorar mercados
-                    emergentes y establecer contactos estratégicos.
-                  </p>
+
+                <div className="quienes-participan justify-content-between mil-mb-60">
+                  <ul>
+                    <h5 className="mil-mb-30">PARTICIPAN</h5>
+                    <li>Productores y fabricantes</li>
+                    <li>Importadores y exportadores</li>
+                    <li>Proveedores y distribuidores</li>
+                    <li>Comercializadores</li>
+                    <li>Agentes comerciales</li>
+                    <li>Prestadores de servicios</li>
+                    <li>Inversionistas</li>
+                  </ul>
+
+                  <ul>
+                    <h5 className="mil-mb-30">
+                      SECTORES Y PRODUCTOS PRESENTADOS
+                    </h5>
+                    <li>Bienes Industriales y/o de Consumo</li>
+                    <li>Agrícola, pecuario y hortofrutícola</li>
+                    <li>Alimentos y bebidas</li>
+                    <li>Productos para la construcción y decoración</li>
+                    <li>Plásticos y afines</li>
+                    <li>Envases, embalajes y afines</li>
+                    <li>Químicos</li>
+                    <li>
+                      Farmacia, medicamentos (productos médicos y hospitalarios)
+                    </li>
+                    <li>Equipos eléctricos y electrónicos</li>
+                    <li>Minería</li>
+                    <li>Industria de la madera y muebles en general</li>
+                    <li>Industria textil, confecciones y moda</li>
+                    <li>Industria papelera y gráfica</li>
+                    <li>Vehículos automotores, piezas y partes</li>
+                    <li>Equipos e implementos hidráulicos</li>
+                    <li>Tecnologías de la información y comunicación</li>
+                    <li>Electrodomésticos y línea blanca</li>
+                    <li>Artesanías</li>
+                    <li>Joyería, bisutería y orfebrería</li>
+                    <li>Cosméticos, belleza y salud</li>
+                    <li>Metalmecánica y electromecánica</li>
+                    <li>
+                      Equipos y tecnología para la industria petrolera, gas y
+                      petroquímica
+                    </li>
+                    <li>Petróleo, gas y petroquímica</li>
+                    <li>Artículos, implementos y equipos de seguridad</li>
+                    <li>Artículos de limpieza y para el hogar</li>
+                    <li>Juguetería y artículos de entretenimiento</li>
+                    <li>Ferretería y herramientas</li>
+                    <li>Energía</li>
+                    <li>Ecología y protección del medio ambiente</li>
+                    <li>
+                      Tecnologías y equipamiento para la agropecuaria e
+                      industria
+                    </li>
+                    <li>Otros</li>
+                  </ul>
+                </div>
+
+                <div className="quienes-participan d-flex justify-content-between">
+                  <ul>
+                    <h5 className="mil-mb-30">SERVICIOS</h5>
+
+                    <li>Servicios aduaneros</li>
+                    <li>Turismo, hotelería y restaurante</li>
+                    <li>Servicios informáticos y de telecomunicación</li>
+                    <li>Bancos y financieras</li>
+                    <li>Almacenamiento y distribución</li>
+                    <li>Servicios empresariales</li>
+                    <li>Servicios para la agroindustria</li>
+                    <li>Fletes y transporte</li>
+                    <li>Seguros</li>
+                    <li>Servicios de construcción e ingeniería</li>
+                    <li>Otros servicios</li>
+                  </ul>
+
+                  <ul>
+                    <h5 className="mil-mb-30">ORGANISMOS E INSTITUCIONES</h5>
+                    <li>
+                      Gobierno, organizaciones gubernamentales, empresas
+                      públicas
+                    </li>
+                    <li>Organismos internacionales</li>
+                    <li>Cámaras y organizaciones empresariales</li>
+                  </ul>
                 </div>
               </div>
 
@@ -70,31 +139,35 @@ const QueEsLaRuedaPage = () => {
                 className="row justify-content-between mil-p-90-120"
                 id="servicios-de-la-rueda"
               >
-                <div className="col-lg-8">
+                <div className="">
+                  <h3 className="mil-up mil-mb-30 mil-center ">
+                    Servicios de la Rueda
+                  </h3>
                   <p className="mil-text-xl mil-dark mil-up mil-mb-60">
-                    Los participantes de la Rueda de Negocios cuentan con una
-                    variedad de servicios diseñados para maximizar su
-                    experiencia y oportunidades de negocio. Entre estos
-                    servicios se incluyen una agenda de negocios personalizada
-                    para cada empresa, asesoramiento y apoyo continuo durante el
-                    evento, y un directorio digital de participantes. Los
-                    participantes también reciben acreditación para ingresar a
-                    Expocruz durante los días del encuentro (si no son
-                    expositores), promoción internacional de su empresa, acceso
-                    a un Business Center para participantes presenciales y
-                    servicios de apoyo empresarial para todos los asistentes.
-                    Además, se facilita el networking con representantes de
-                    empresas, instituciones y organizaciones nacionales e
-                    internacionales de su interés. Para la comodidad de los
-                    participantes presenciales, la Rueda ofrece transporte
-                    gratuito a la Feria Expocruz 2024, así como servicios de
-                    guardarropa y custodia, y servicios de cafetería y catering,
-                    estos últimos dos con un costo adicional.
+                    Los participantes de la Rueda cuentan con los siguientes
+                    servicios: Agenda de negocios por empresa Asesoramiento y
+                    apoyo permanente durante la realización de la rueda
+                    Capacitación gratuita sobre la participación en ruedas de
+                    negocio. Promoción de su empresa en Paginas Oficiales del
+                    evento Business Center para participantes presenciales y
+                    servicios de apoyo empresarial para todos los participantes
+                    Networking con representantes de empresas, instituciones y
+                    organizaciones de su interés, nacionales e internacionales
                   </p>
-                </div>
-
-                <div className="col-lg-4 d-flex justify-content-center align-items-center">
-                  <h3 className="mil-up mil-mb-60 ">Servicios de la Rueda</h3>
+                  <p className="mil-text-xl mil-dark mil-up mil-mb-60">
+                    Adicionalmente, para la comodidad del participante
+                    presencial, la Rueda brinda los siguientes servicios:
+                    <ul
+                      style={{
+                        marginLeft: 40,
+                      }}
+                    >
+                      <li>Servicio de Estacionamiento (sin costo)</li>
+                      <li>
+                        Servicios de cafetería y catering (servicio pagado)
+                      </li>
+                    </ul>
+                  </p>
                 </div>
               </div>
 
