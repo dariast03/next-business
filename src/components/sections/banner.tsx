@@ -1,7 +1,6 @@
 import CONSTANTS from "@/data/CONSTANTS";
 import React from "react";
 import ExternalLink from "../ui/external-link";
-import { openUrl } from "@/lib/open-url";
 
 const Banner = () => {
   return (
