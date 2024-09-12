@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-type Props = React.HtmlHTMLAttributes<HTMLDivElement> & {
+type Props = React.HtmlHTMLAttributes<HTMLAnchorElement> & {
   href: string;
 };
 

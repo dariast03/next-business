@@ -59,7 +59,10 @@ const Banner = () => {
                 </ul>
               </div>
             </div>
-            <ExternalLink data-no-swup href={`${process.env.PLATFORM_URL}`}>
+            <ExternalLink
+              data-no-swup
+              href={`${process.env.NEXT_PUBLIC_PLATFORM_URL}`}
+            >
               <div className="mil-button mil-arrow-place mil-btn-space">
                 <span>FORMULARIO DE INSCRIPCIÓN DIGITAL </span>
               </div>

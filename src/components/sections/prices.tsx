@@ -56,7 +56,7 @@ const Prices = () => {
             {prices.map((price) => (
               <ExternalLink
                 key={price.id}
-                href={`${process.env.PLATFORM_URL}/select-plan/${price.slug}`}
+                href={`${process.env.NEXT_PUBLIC_PLATFORM_URL}/select-plan/${price.slug}`}
                 className="mil-price-card mil-choose mil-accent-cursor mil-up"
               >
                 <div className="row align-items-center justify-content-center">
