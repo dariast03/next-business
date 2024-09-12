@@ -1,12 +1,48 @@
 import ExternalLink from "@/components/ui/external-link";
-import Link from "next/link";
-import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contacto - Rueda de Negocios ExpoSur 2024",
+  description:
+    "Póngase en contacto con nosotros para más información sobre la Rueda de Negocios ExpoSur 2024 organizada por la Universidad Privada Domingo Savio. Estamos aquí para ayudarle.",
+  keywords:
+    "contacto, Rueda de Negocios, ExpoSur 2024, Universidad Privada Domingo Savio, información de contacto, ayuda, soporte",
+  openGraph: {
+    title: "Contacto - Rueda de Negocios ExpoSur 2024",
+    description:
+      "Póngase en contacto con nosotros para más información sobre la Rueda de Negocios ExpoSur 2024 organizada por la Universidad Privada Domingo Savio.",
+    url: "https://www.exposur2024.com/contacto",
+    siteName: "ExpoSur 2024",
+    images: [
+      {
+        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contacto - Rueda de Negocios ExpoSur 2024",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contacto - Rueda de Negocios ExpoSur 2024",
+    description:
+      "Póngase en contacto con nosotros para más información sobre la Rueda de Negocios ExpoSur 2024 organizada por la Universidad Privada Domingo Savio.",
+    images: [
+      {
+        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Contacto - Rueda de Negocios ExpoSur 2024",
+      },
+    ],
+  },
+};
 
 const ContactPage = () => {
   return (
     <>
-      {/* banner */}
-      {/* banner */}
       <div className="mil-inner-banner mil-p-120-120">
         <div className="mil-banner-content mil-center mil-up">
           <div className="container">

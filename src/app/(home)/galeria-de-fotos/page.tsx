@@ -1,5 +1,44 @@
 import CONSTANTS from "@/data/CONSTANTS";
-import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Galería de Fotos - Rueda de Negocios ExpoSur 2024",
+  description:
+    "Explora nuestra galería de fotos de la Rueda de Negocios ExpoSur 2024, organizada por la Universidad Privada Domingo Savio. Descubre momentos destacados y eventos en imágenes.",
+  keywords:
+    "Galería de Fotos, Rueda de Negocios, ExpoSur 2024, Universidad Privada Domingo Savio, eventos, imágenes, fotos del evento",
+  openGraph: {
+    title: "Galería de Fotos - Rueda de Negocios ExpoSur 2024",
+    description:
+      "Explora nuestra galería de fotos de la Rueda de Negocios ExpoSur 2024, organizada por la Universidad Privada Domingo Savio. Descubre momentos destacados y eventos en imágenes.",
+    url: "https://www.exposur2024.com/galeria-de-fotos",
+    siteName: "ExpoSur 2024",
+    images: [
+      {
+        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg", // Imagen representativa de la galería
+        width: 1200,
+        height: 630,
+        alt: "Galería de Fotos - Rueda de Negocios ExpoSur 2024",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Galería de Fotos - Rueda de Negocios ExpoSur 2024",
+    description:
+      "Explora nuestra galería de fotos de la Rueda de Negocios ExpoSur 2024, organizada por la Universidad Privada Domingo Savio. Descubre momentos destacados y eventos en imágenes.",
+    images: [
+      {
+        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Galería de Fotos - Rueda de Negocios ExpoSur 2024",
+      },
+    ],
+  },
+};
 
 const GaleriaDeFotosPage = () => {
   return (
@@ -172,7 +211,7 @@ const GaleriaDeFotosPage = () => {
                     <div className="mil-cover">
                       <img
                         src={`${CONSTANTS.BASE_URL}/img/rueda/1.jpeg`}
-                        alt="cover"
+                        alt="Rueda"
                       />
                     </div>
                   </div>

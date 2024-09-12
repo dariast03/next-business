@@ -1,5 +1,44 @@
 import Banner from "@/components/sections/que-es-la-rueda/banner";
-import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "¿Qué es la Rueda de Negocios? - ExpoSur 2024",
+  description:
+    "Conoce en detalle qué es la Rueda de Negocios en ExpoSur 2024, un espacio para fomentar el desarrollo empresarial, el networking y la creación de alianzas estratégicas en Tarija.",
+  keywords:
+    "Qué es la Rueda de Negocios, ExpoSur 2024, Universidad Privada Domingo Savio, eventos empresariales, networking, alianzas estratégicas, Tarija",
+  openGraph: {
+    title: "¿Qué es la Rueda de Negocios? - ExpoSur 2024",
+    description:
+      "Conoce en detalle qué es la Rueda de Negocios en ExpoSur 2024, un espacio para fomentar el desarrollo empresarial, el networking y la creación de alianzas estratégicas en Tarija.",
+    url: "https://www.exposur2024.com/que-es-la-rueda",
+    siteName: "ExpoSur 2024",
+    images: [
+      {
+        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg", // Imagen representativa de la rueda de negocios
+        width: 1200,
+        height: 630,
+        alt: "¿Qué es la Rueda de Negocios? - ExpoSur 2024",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "¿Qué es la Rueda de Negocios? - ExpoSur 2024",
+    description:
+      "Conoce en detalle qué es la Rueda de Negocios en ExpoSur 2024, un espacio para fomentar el desarrollo empresarial, el networking y la creación de alianzas estratégicas en Tarija.",
+    images: [
+      {
+        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        width: 1200,
+        height: 675,
+        alt: "¿Qué es la Rueda de Negocios? - ExpoSur 2024",
+      },
+    ],
+  },
+};
 
 const QueEsLaRuedaPage = () => {
   return (

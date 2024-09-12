@@ -1,4 +1,43 @@
-import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cómo Participar - Rueda de Negocios ExpoSur 2024",
+  description:
+    "Descubre cómo participar en la Rueda de Negocios ExpoSur 2024 organizada por la Universidad Privada Domingo Savio. Conoce los requisitos, inscripción y beneficios de participar en este evento empresarial único en Tarija.",
+  keywords:
+    "Cómo participar, Rueda de Negocios, ExpoSur 2024, Universidad Privada Domingo Savio, inscripción, requisitos de participación, eventos empresariales, Tarija",
+  openGraph: {
+    title: "Cómo Participar - Rueda de Negocios ExpoSur 2024",
+    description:
+      "Descubre cómo participar en la Rueda de Negocios ExpoSur 2024 organizada por la Universidad Privada Domingo Savio. Conoce los requisitos, inscripción y beneficios de participar en este evento empresarial único en Tarija.",
+    url: "https://www.exposur2024.com/como-participar",
+    siteName: "ExpoSur 2024",
+    images: [
+      {
+        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg", // Imagen representativa del evento
+        width: 1200,
+        height: 630,
+        alt: "Cómo Participar - Rueda de Negocios ExpoSur 2024",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cómo Participar - Rueda de Negocios ExpoSur 2024",
+    description:
+      "Descubre cómo participar en la Rueda de Negocios ExpoSur 2024 organizada por la Universidad Privada Domingo Savio. Conoce los requisitos, inscripción y beneficios de participar en este evento empresarial único en Tarija.",
+    images: [
+      {
+        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Cómo Participar - Rueda de Negocios ExpoSur 2024",
+      },
+    ],
+  },
+};
 
 const ComoParticiparPage = () => {
   return (
