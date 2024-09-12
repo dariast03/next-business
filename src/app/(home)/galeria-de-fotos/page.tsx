@@ -1,5 +1,6 @@
 import CONSTANTS from "@/data/CONSTANTS";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Galería de Fotos - Rueda de Negocios ExpoSur 2024",
@@ -57,7 +58,7 @@ const GaleriaDeFotosPage = () => {
             <div className="container">
               <ul className="mil-breadcrumbs mil-mb-60">
                 <li>
-                  <a href="home-1.html">Inicio</a>
+                  <Link href="/">Inicio</Link>
                 </li>
                 <li>
                   <a href="portfolio-2.html">Galeria de Fotos</a>

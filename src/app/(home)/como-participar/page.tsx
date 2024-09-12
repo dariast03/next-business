@@ -1,3 +1,4 @@
+import CONSTANTS from "@/data/CONSTANTS";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -74,7 +75,7 @@ const ComoParticiparPage = () => {
         <div className="container " id="project">
           <div className="mil-image-frame mil-horizontal mil-up">
             <img
-              src="https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0042.jpg"
+              src={`${CONSTANTS.BASE_URL}/img/gral/como-participar.jpg`}
               alt="image"
             />
             <a

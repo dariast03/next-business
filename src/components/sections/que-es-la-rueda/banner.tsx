@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
@@ -8,7 +9,7 @@ const Banner = () => {
           <div className="container">
             <ul className="mil-breadcrumbs mil-center mil-mb-60">
               <li>
-                <a href="home-1.html">Inicio</a>
+                <Link href="/">Inicio</Link>
               </li>
               <li>
                 <a href="que-es-la-rueda.html">Qué es la Rueda</a>
@@ -35,7 +36,7 @@ const Banner = () => {
           <div className="container">
             <ul className="mil-breadcrumbs mil-mb-60">
               <li>
-                <a href="home-1.html">Inicio</a>
+                <Link href="/">Inicio</Link>
               </li>
               <li>
                 <a href="que-es-la-rueda.html">Qué es la Rueda</a>

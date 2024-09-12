@@ -1,4 +1,5 @@
 import Banner from "@/components/sections/que-es-la-rueda/banner";
+import CONSTANTS from "@/data/CONSTANTS";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "ExpoSur 2024",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg", // Imagen representativa de la rueda de negocios
+        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
         width: 1200,
         height: 630,
         alt: "¿Qué es la Rueda de Negocios? - ExpoSur 2024",
@@ -73,7 +74,7 @@ const QueEsLaRuedaPage = () => {
             </div> */}
 
             <div className="col-lg-8">
-              <div className="mil-p-90-120">
+              <div className="mil-p-90-30">
                 <div className="d-flex justify-content-center align-items-center">
                   <h3 className="mil-up mil-mb-60 " id="quienes-participan">
                     ¿Quiénes participan?
@@ -167,15 +168,8 @@ const QueEsLaRuedaPage = () => {
                 </div>
               </div>
 
-              <div className="mil-image-frame mil-horizontal mil-up mil-mb-60">
-                <img
-                  src="https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0243.jpg"
-                  alt="Servicios de la Rueda"
-                />
-              </div>
-
               <div
-                className="row justify-content-between mil-p-90-120"
+                className="row justify-content-between mil-p-90-30"
                 id="servicios-de-la-rueda"
               >
                 <div className="">
@@ -212,7 +206,7 @@ const QueEsLaRuedaPage = () => {
 
               <div className="mil-image-frame mil-horizontal mil-up mil-mb-60">
                 <img
-                  src="https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0243.jpg"
+                  src={`${CONSTANTS.BASE_URL}/img/gral/que-es-la-rueda.jpg`}
                   alt="Servicios de la Rueda"
                 />
               </div>

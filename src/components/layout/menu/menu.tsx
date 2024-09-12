@@ -7,7 +7,7 @@ const Menu = () => {
     <div className="mil-menu-frame">
       {/* frame clone */}
       <div className="mil-frame-top">
-        <a href="home-1.html" className="mil-logo">
+        {/*    <a href="home-1.html" className="mil-logo">
           <img
             src={`${CONSTANTS.BASE_URL}/img/logo-white.png`}
             alt="logo"
@@ -15,7 +15,7 @@ const Menu = () => {
               width: 200,
             }}
           />
-        </a>
+        </a> */}
         <div className="mil-menu-btn">
           <span />
         </div>
