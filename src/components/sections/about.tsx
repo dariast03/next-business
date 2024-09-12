@@ -46,15 +46,29 @@ const About = () => {
             <div className="mil-about-photo mil-mb-90">
               <div className="mil-lines-place" />
               <div
-                className="mil-up mil-img-frame"
-                style={{ paddingBottom: "160%" }}
+                className="mil-up "
+                //  style={{ paddingBottom: "160%" }}
               >
-                <img
+                {/*  <img
                   src="https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0090-1.jpg"
                   alt="Rueda de Negocios"
                   className="mil-scale"
                   data-value-1={1}
                   data-value-2="1.2"
+                /> */}
+
+                <iframe
+                  // className="mil-scale"
+                  src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Funiversidadprivadadomingosaviotarija%2Fvideos%2F1031034705177135&width=500&show_text=false&height=889&appId"
+                  height={889}
+                  style={{
+                    border: "none",
+                    overflow: "hidden",
+                    width: "100%",
+                  }}
+                  title="awd"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 />
               </div>
             </div>

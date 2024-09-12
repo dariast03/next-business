@@ -1,22 +1,27 @@
 import CONSTANTS from "@/data/CONSTANTS";
 import React from "react";
+import ExternalLink from "../ui/external-link";
 
 const partners = [
   {
     name: "UPDS",
     logo: "upds.png",
+    url: "https://www.facebook.com/universidadprivadadomingosaviotarija",
   },
   {
     name: "GAMT",
     logo: "gamt.png",
+    url: "https://www.tarija.gob.bo/",
   },
   {
     name: "Cadexst",
     logo: "cadexst.png",
+    url: "#",
   },
   {
     name: "Caneb",
     logo: "caneb.png",
+    url: "#",
   },
 ];
 
@@ -39,7 +44,11 @@ const Teams = () => {
           <div className="container overflow-hidden">
             <div className="row gy-4">
               {partners.map((part) => (
-                <div className="col-6 col-md-6 text-center" key={part.name}>
+                <ExternalLink
+                  href={part.url}
+                  className="col-6 col-md-6 text-center"
+                  key={part.name}
+                >
                   <div className="text-secondary bg-light px-4 py-3 px-md-6 py-md-4 px-lg-8 py-lg-5">
                     <img
                       style={{
@@ -51,7 +60,7 @@ const Teams = () => {
                       alt={part.name}
                     />
                   </div>
-                </div>
+                </ExternalLink>
               ))}
 
               {/*  <div className="col-6 col-md-4 col-xl-4 text-center">

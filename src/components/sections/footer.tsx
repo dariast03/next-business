@@ -1,5 +1,6 @@
 import CONSTANTS from "@/data/CONSTANTS";
 import React from "react";
+import ExternalLink from "../ui/external-link";
 
 const links = [
   {
@@ -47,40 +48,30 @@ const Footer = () => {
                 <div className="mil-mb-30">
                   <ul className="mil-social-icons mil-up">
                     <li>
-                      <a
-                        href="https://facebook.com"
-                        target="_blank"
+                      <ExternalLink
+                        href="https://www.facebook.com/universidadprivadadomingosaviotarija"
                         className="social-icon"
                       >
                         <i className="fab fa-facebook-f" />
-                      </a>
+                      </ExternalLink>
                     </li>
+
                     <li>
-                      <a
-                        href="https://twitter.com"
-                        target="_blank"
-                        className="social-icon"
-                      >
-                        <i className="fab fa-twitter" />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://linkedin.com"
-                        target="_blank"
-                        className="social-icon"
-                      >
-                        <i className="fab fa-linkedin-in" />
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://instagram.com"
-                        target="_blank"
+                      <ExternalLink
+                        href="https://www.instagram.com/upds_tarija/"
                         className="social-icon"
                       >
                         <i className="fab fa-instagram" />
-                      </a>
+                      </ExternalLink>
+                    </li>
+
+                    <li>
+                      <ExternalLink
+                        href="https://www.tiktok.com/@upds_tarija"
+                        className="social-icon"
+                      >
+                        <i className="fab fa-tiktok" />
+                      </ExternalLink>
                     </li>
                   </ul>
                 </div>
