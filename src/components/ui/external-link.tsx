@@ -13,7 +13,9 @@ const ExternalLink: React.FC<Props> = (props) => {
       data-no-swup
       onClick={(e) => {
         e.preventDefault();
-        window.open(props.href, "_blank");
+        if (props.href !== "#") {
+          window.open(props.href, "_blank");
+        }
       }}
       target="_blank"
     />
