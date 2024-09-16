@@ -9,23 +9,23 @@ import Teams from "@/components/sections/teams";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ExpoSur 2024 - Feria Internacional de Tarija",
+  title: "Rueda Empresaria de Negocios 2024",
   description:
-    "Bienvenido a ExpoSur 2024, la Feria Internacional de Tarija, donde se reúnen empresas, emprendedores y visitantes para explorar oportunidades de negocio, innovación y cultura en el corazón de Bolivia.",
+    "La Rueda Empresaria de Negocios 2024, organizada por la Universidad Privada Domingo Savio, ofrece una excelente oportunidad para ofertar y demandar productos y servicios, establecer acuerdos de cooperación y alianzas estratégicas, y explorar nuevas oportunidades de negocio en el marco de la Feria Internacional de Tarija.",
   keywords:
-    "ExpoSur 2024, Feria Internacional de Tarija, eventos en Bolivia, oportunidades de negocio, networking, innovación, cultura, turismo en Tarija",
+    "Rueda Empresaria de Negocios 2024, Universidad Privada Domingo Savio, Feria Internacional de Tarija, oportunidades de negocio, acuerdos de cooperación, alianzas estratégicas, capacitación, tendencias de mercado, innovación, networking",
   openGraph: {
-    title: "ExpoSur 2024 - Feria Internacional de Tarija",
+    title: "Rueda Empresaria de Negocios 2024",
     description:
-      "Bienvenido a ExpoSur 2024, la Feria Internacional de Tarija, donde se reúnen empresas, emprendedores y visitantes para explorar oportunidades de negocio, innovación y cultura en el corazón de Bolivia.",
-    url: "https://www.exposur2024.com/",
-    siteName: "ExpoSur 2024",
+      "La Rueda Empresaria de Negocios 2024, organizada por la Universidad Privada Domingo Savio, ofrece una excelente oportunidad para ofertar y demandar productos y servicios, establecer acuerdos de cooperación y alianzas estratégicas, y explorar nuevas oportunidades de negocio en el marco de la Feria Internacional de Tarija.",
+    url: "https://tarija.upds.edu.bo/rdn",
+    siteName: "Rueda Empresaria de Negocios 2024",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg",
         width: 1200,
         height: 630,
-        alt: "ExpoSur 2024 - Feria Internacional de Tarija",
+        alt: "Rueda Empresaria de Negocios 2024",
       },
     ],
     locale: "es_ES",
@@ -33,15 +33,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ExpoSur 2024 - Feria Internacional de Tarija",
+    title:
+      "Rueda Empresaria de Negocios 2024 - Universidad Privada Domingo Savio",
     description:
-      "Bienvenido a ExpoSur 2024, la Feria Internacional de Tarija, donde se reúnen empresas, emprendedores y visitantes para explorar oportunidades de negocio, innovación y cultura en el corazón de Bolivia.",
+      "La Rueda Empresaria de Negocios 2024, organizada por la Universidad Privada Domingo Savio, ofrece una excelente oportunidad para ofertar y demandar productos y servicios, establecer acuerdos de cooperación y alianzas estratégicas, y explorar nuevas oportunidades de negocio en el marco de la Feria Internacional de Tarija.",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg", // Imagen representativa de la ExpoSur 2024
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg", // Imagen representativa del evento
         width: 1200,
         height: 675,
-        alt: "ExpoSur 2024 - Feria Internacional de Tarija",
+        alt: "Rueda Empresaria de Negocios 2024 - Universidad Privada Domingo Savio",
       },
     ],
   },
@@ -59,11 +60,11 @@ export default function Home() {
       {/* about end */}
 
       {/* empresas asociadas */}
-      <Business />
+      {/* <Business /> */}
       {/* empresas asociadas end */}
 
       {/* partners */}
-      <Partners />
+      {/*       <Partners /> */}
       {/* partners end */}
 
       {/* services */}
