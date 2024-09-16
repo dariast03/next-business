@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     siteName: "ExpoSur 2024",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg",
         width: 1200,
         height: 630,
         alt: "¿Qué es la Rueda de Negocios? - ExpoSur 2024",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Conoce en detalle qué es la Rueda de Negocios en ExpoSur 2024, un espacio para fomentar el desarrollo empresarial, el networking y la creación de alianzas estratégicas en Tarija.",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg",
         width: 1200,
         height: 675,
         alt: "¿Qué es la Rueda de Negocios? - ExpoSur 2024",
