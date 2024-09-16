@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "ExpoSur 2024",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg",
         width: 1200,
         height: 630,
         alt: "Rueda de Negocios - ExpoSur 2024",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       "La Rueda Empresarial de Negocios, organizada por la Universidad Privada Domingo Savio, es el evento ideal para establecer acuerdos, intercambiar información y desarrollar nuevos negocios en la Feria Exposición de Tarija – ExpoSur 2024.",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg",
         width: 1200,
         height: 675,
         alt: "Rueda de Negocios - ExpoSur 2024",
