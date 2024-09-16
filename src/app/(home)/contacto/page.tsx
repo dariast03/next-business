@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "ExpoSur 2024",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg",
         width: 1200,
         height: 630,
         alt: "Contacto - Rueda de Negocios ExpoSur 2024",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       "Póngase en contacto con nosotros para más información sobre la Rueda de Negocios ExpoSur 2024 organizada por la Universidad Privada Domingo Savio.",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg",
         width: 1200,
         height: 675,
         alt: "Contacto - Rueda de Negocios ExpoSur 2024",
