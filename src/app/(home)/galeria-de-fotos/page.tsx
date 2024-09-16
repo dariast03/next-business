@@ -1,6 +1,7 @@
 import CONSTANTS from "@/data/CONSTANTS";
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Fragment } from "react";
 
 export const metadata: Metadata = {
   title: "Galería de Fotos - Rueda de Negocios ExpoSur 2024",
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "ExpoSur 2024",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg", // Imagen representativa de la galería
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg", // Imagen representativa de la galería
         width: 1200,
         height: 630,
         alt: "Galería de Fotos - Rueda de Negocios ExpoSur 2024",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
       "Explora nuestra galería de fotos de la Rueda de Negocios ExpoSur 2024, organizada por la Universidad Privada Domingo Savio. Descubre momentos destacados y eventos en imágenes.",
     images: [
       {
-        url: "https://www.ruedadenegociosbolivia.com/wp-content/uploads/2016/06/DSC_0097.jpg",
+        url: "https://tarija.upds.edu.bo/rdn/img/galeria/3.jpg",
         width: 1200,
         height: 675,
         alt: "Galería de Fotos - Rueda de Negocios ExpoSur 2024",
@@ -40,6 +41,15 @@ export const metadata: Metadata = {
     ],
   },
 };
+
+const images = [
+  ["/img/galeria/1.jpg", "/img/galeria/2.jpg", "/img/galeria/3.jpg"],
+  ["/img/galeria/4.jpg", "/img/galeria/5.jpg", "/img/galeria/6.jpg"],
+  ["/img/galeria/7.jpg", "/img/galeria/8.jpg", "/img/galeria/9.jpg"],
+  ["/img/galeria/10.jpg", "/img/galeria/11.jpg", "/img/galeria/12.jpg"],
+  ["/img/galeria/13.jpg", "/img/galeria/14.jpg", "/img/galeria/15.jpg"],
+  ["/img/galeria/16.jpg", "/img/galeria/17.jpg"],
+];
 
 const GaleriaDeFotosPage = () => {
   return (
@@ -75,158 +85,94 @@ const GaleriaDeFotosPage = () => {
             <div className="mil-lines-place" />
             <div className="mil-lines-place mil-lines-long" />
             <div className="row justify-content-between align-items-end">
-              <div className="col-lg-6">
-                <a
-                  href="portfolio-1.html"
-                  className="mil-portfolio-item mil-more mil-mb-60"
-                >
-                  <div className="mil-cover-frame mil-hori mil-up">
-                    <div
-                      className="mil-cover mil-scale"
-                      data-value-1="1.2"
-                      data-value-2={1}
+              {images.map((image, index) => (
+                <Fragment key={`${image[0]}-${index}`}>
+                  <div className="col-lg-6">
+                    <a
+                      href="portfolio-1.html"
+                      className="mil-portfolio-item mil-more mil-mb-60"
                     >
-                      <img
-                        src={`${CONSTANTS.BASE_URL}/img/rueda/1.jpeg`}
-                        alt="cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="mil-descr">
-                    <div className="mil-labels mil-up mil-mb-15">
-                      {/*    <div className="mil-label mil-upper mil-accent">
+                      <div className="mil-cover-frame mil-hori mil-up">
+                        <div
+                          className="mil-cover mil-scale"
+                          data-value-1="1.2"
+                          data-value-2={1}
+                        >
+                          <img
+                            src={`${CONSTANTS.BASE_URL}${image[0]}`}
+                            alt="cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="mil-descr">
+                        <div className="mil-labels mil-up mil-mb-15">
+                          {/*    <div className="mil-label mil-upper mil-accent">
                         Branding
                       </div> */}
-                      <div className="mil-label mil-upper">may 24 2023</div>
-                    </div>
-                    {/* <h4 className="mil-up">Interior design studio</h4> */}
+                          {/* <div className="mil-label mil-upper">may 24 2023</div> */}
+                        </div>
+                        {/* <h4 className="mil-up">Interior design studio</h4> */}
+                      </div>
+                    </a>
                   </div>
-                </a>
-              </div>
-              <div className="col-lg-5">
-                <a
-                  href="project-2.html"
-                  className="mil-portfolio-item mil-more mil-parallax mil-mb-60"
-                  data-value-1={-30}
-                  data-value-2={0}
-                >
-                  <div className="mil-cover-frame mil-hori mil-up">
-                    <div className="mil-cover">
-                      <img
-                        src={`${CONSTANTS.BASE_URL}/img/rueda/2.jpeg`}
-                        alt="cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="mil-descr">
-                    <div className="mil-labels mil-up mil-mb-15">
-                      {/* <div className="mil-label mil-upper mil-accent">
+
+                  <div className="col-lg-5">
+                    <a
+                      href="project-2.html"
+                      className="mil-portfolio-item mil-more mil-parallax mil-mb-60"
+                      data-value-1={-30}
+                      data-value-2={0}
+                    >
+                      <div className="mil-cover-frame mil-hori mil-up">
+                        <div className="mil-cover">
+                          <img
+                            src={`${CONSTANTS.BASE_URL}${image[1]}`}
+                            alt="cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="mil-descr">
+                        <div className="mil-labels mil-up mil-mb-15">
+                          {/* <div className="mil-label mil-upper mil-accent">
                         Design
                       </div> */}
-                      <div className="mil-label mil-upper">may 24 2023</div>
-                    </div>
-                    {/* <h4 className="mil-up">Home Security Camera</h4> */}
+                          {/*  <div className="mil-label mil-upper">may 24 2023</div> */}
+                        </div>
+                        {/* <h4 className="mil-up">Home Security Camera</h4> */}
+                      </div>
+                    </a>
                   </div>
-                </a>
-              </div>
-              <div className="col-lg-12">
-                <a
-                  href="project-3.html"
-                  className="mil-portfolio-item mil-more mil-mb-60"
-                >
-                  <div className="mil-cover-frame mil-hori mil-up">
-                    <div className="mil-cover">
-                      <img
-                        src={`${CONSTANTS.BASE_URL}/img/rueda/3.jpeg`}
-                        alt="cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="mil-descr">
-                    <div className="mil-labels mil-up mil-mb-15">
-                      {/*   <div className="mil-label mil-upper mil-accent">
+
+                  {image[2] && (
+                    <div className="col-lg-12">
+                      <a
+                        href="project-3.html"
+                        className="mil-portfolio-item mil-more mil-mb-60"
+                      >
+                        <div className="mil-cover-frame mil-hori mil-up">
+                          <div className="mil-cover">
+                            <img
+                              src={`${CONSTANTS.BASE_URL}${image[2]}`}
+                              alt="cover"
+                            />
+                          </div>
+                        </div>
+                        <div className="mil-descr">
+                          <div className="mil-labels mil-up mil-mb-15">
+                            {/*   <div className="mil-label mil-upper mil-accent">
                         Photography
                       </div> */}
-                      <div className="mil-label mil-upper">may 24 2023</div>
+                            {/*   <div className="mil-label mil-upper">
+                              may 24 2023
+                            </div> */}
+                          </div>
+                          {/* <h4 className="mil-up">Kemia Honest Skincare</h4> */}
+                        </div>
+                      </a>
                     </div>
-                    {/* <h4 className="mil-up">Kemia Honest Skincare</h4> */}
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-5">
-                <a
-                  href="project-4.html"
-                  className="mil-portfolio-item mil-more mil-parallax mil-mb-60"
-                  data-value-1={-30}
-                  data-value-2={0}
-                >
-                  <div className="mil-cover-frame mil-hori mil-up">
-                    <div className="mil-cover">
-                      <img
-                        src={`${CONSTANTS.BASE_URL}/img/rueda/4.jpeg`}
-                        alt="cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="mil-descr">
-                    <div className="mil-labels mil-up mil-mb-15">
-                      <div className="mil-label mil-upper mil-accent">
-                        Design
-                      </div>
-                      <div className="mil-label mil-upper">may 24 2023</div>
-                    </div>
-                    {/* <h4 className="mil-up">Cascade of Lava</h4> */}
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-6">
-                <a
-                  href="project-5.html"
-                  className="mil-portfolio-item mil-more mil-mb-60"
-                >
-                  <div className="mil-cover-frame mil-hori mil-up">
-                    <div className="mil-cover">
-                      <img
-                        src={`${CONSTANTS.BASE_URL}/img/rueda/3.jpeg`}
-                        alt="cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="mil-descr">
-                    <div className="mil-labels mil-up mil-mb-15">
-                      <div className="mil-label mil-upper mil-accent">
-                        Design
-                      </div>
-                      <div className="mil-label mil-upper">may 24 2023</div>
-                    </div>
-                    {/* <h4 className="mil-up">Air Pro by Molekule</h4> */}
-                  </div>
-                </a>
-              </div>
-              <div className="col-lg-12">
-                <a
-                  href="project-6.html"
-                  className="mil-portfolio-item mil-more mil-mb-60"
-                >
-                  <div className="mil-cover-frame mil-hori mil-up">
-                    <div className="mil-cover">
-                      <img
-                        src={`${CONSTANTS.BASE_URL}/img/rueda/1.jpeg`}
-                        alt="Rueda"
-                      />
-                    </div>
-                  </div>
-                  <div className="mil-descr">
-                    <div className="mil-labels mil-up mil-mb-15">
-                      <div className="mil-label mil-upper mil-accent">
-                        Design
-                      </div>
-                      <div className="mil-label mil-upper">may 24 2023</div>
-                    </div>
-                    {/* <h4 className="mil-up">Tony's Chocolonely</h4> */}
-                  </div>
-                </a>
-              </div>
+                  )}
+                </Fragment>
+              ))}
             </div>
           </div>
         </section>
