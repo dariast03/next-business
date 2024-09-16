@@ -12,7 +12,7 @@ const prices = [
   },
   {
     id: 2,
-    title: "Público en General",
+    title: "Empresas en General",
     price: 200,
     slug: "publico-general",
     description:
